@@ -1,5 +1,5 @@
 {
-  "name": "station-monorepo",
+  "name": "station-mono",
   "private": true,
   "scripts": {
     "format": "prettier . --write",
