@@ -5,7 +5,7 @@ export const Error = ({
   className,
   fill,
   ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' |  'viewBox' | 'strokeWidth'>) => {
+}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' | 'strokeWidth'>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
