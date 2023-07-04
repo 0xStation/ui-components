@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      favoritpro: ['var(--favoritpro-font)', ...fontFamily.sans],
+    },
     colors: {
+      white: colors.white,
+      slate: colors.slate,
       concrete50: '#4a4a4a',
       concrete70: '#626262',
       concrete100: '#858585',
