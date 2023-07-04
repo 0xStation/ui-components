@@ -13,7 +13,7 @@ type Story = StoryObj<typeof OpenseaIcon>
 
 export const Opensea: Story = {
   render: () => (
-    <div className="bg-slate-800 w-20 h-20 border border-slate-400 border-dashed flex items-center justify-center rounded-md">
+    <div className="bg-wet-concrete100 w-20 h-20 border border-slate-400 border-dashed flex items-center justify-center rounded-md">
       <OpenseaIcon />
     </div>
   ),
