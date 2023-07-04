@@ -13,7 +13,15 @@ type Story = StoryObj<typeof WalletIcon>
 
 export const Wallet: Story = {
   render: () => (
-    <div className="bg-slate-800 w-20 h-20 border border-slate-400 border-dashed flex items-center justify-center rounded-md">
+    <div style={{
+      backgroundColor: '#000000',
+      width: 100,
+      height: 100,
+      border: '1px dashed #e2e2e2',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
       <WalletIcon />
     </div>
   ),
