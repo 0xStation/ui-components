@@ -11,6 +11,7 @@ module.exports = {
     colors: {
       white: colors.white,
       slate: colors.slate,
+      black: colors.black,
       concrete50: '#4a4a4a',
       concrete70: '#626262',
       concrete100: '#858585',
@@ -31,6 +32,7 @@ module.exports = {
       violet100: '#AD72FF',
       'frequency-yellow100': '#CEDC4B',
       magenta100: '#F866A3',
+
     },
     extend: {
       backgroundImage: {

@@ -5,7 +5,7 @@ const preview = {
     layout: 'centered',
     backgrounds: {
       default: 'slate',
-      values: [{ name: 'slate', value: '#111111' }],
+      values: [{ name: 'slate', value: '#111111' }, {name: 'concrete', value: '#858585'}],
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
