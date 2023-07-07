@@ -1,5 +1,5 @@
 ---
-'@station/ui-components': patch
+'@groupos/ui-components': patch
 ---
 
 add informative icons
