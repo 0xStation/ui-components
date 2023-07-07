@@ -10,8 +10,7 @@
     "test": "vitest"
   },
   "publishConfig": {
-    "directory": "dist",
-    "access": "restricted",
+    "access": "public",
     "linkDirectory": false
   },
   "devDependencies": {
@@ -71,7 +70,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "package.json"
   ],
   "repository": {
     "type": "git",
