@@ -7,7 +7,8 @@
     "build": "pnpm -r build",
     "prettier": "prettier --write .",
     "prerelase": "pnpm build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "changeset": "changeset"
   },
   "engines": {
     "pnpm": ">=8"
