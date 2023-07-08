@@ -12,6 +12,7 @@ module.exports = {
       white: colors.white,
       slate: colors.slate,
       black: colors.black,
+      marbleWhite: '#F2EFEF',
       concrete50: '#4a4a4a',
       concrete70: '#626262',
       concrete100: '#858585',
@@ -32,9 +33,22 @@ module.exports = {
       violet100: '#AD72FF',
       'frequency-yellow100': '#CEDC4B',
       magenta100: '#F866A3',
-
     },
     extend: {
+      fontSize: {
+        'base-xxs': ['12px', { lineHeight: '16px' }],
+        'base-xs': ['14px', { lineHeight: '18px' }],
+        'base-sm': ['16px', { lineHeight: '20px' }],
+        'base-md': ['18px', { lineHeight: '22px' }],
+        'base-lg': ['22px', { lineHeight: '26px' }],
+        'heading-xxs': ['13px', { lineHeight: '17px' }],
+        'heading-xs': ['14px', { lineHeight: '18px' }],
+        'heading-sm': ['16px', { lineHeight: '20px' }],
+        'heading-md': ['18px', { lineHeight: '22px' }],
+        'heading-lg': ['22px', { lineHeight: '26px' }],
+        'heading-xl': ['24px', { lineHeight: '28px' }],
+        'heading-2xl': ['26px', { lineHeight: '30px' }],
+      },
       backgroundImage: {
         electricity: 'linear-gradient(180deg, #885EC2 6.83%, #C82BCB 100%))',
       },

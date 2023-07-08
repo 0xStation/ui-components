@@ -1,27 +1,55 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Modal, ModalContent } from './'
+import { Modal } from './'
+import clsx from 'clsx'
 
 const ModalMeta = {
   title: 'Modal',
-  component: ModalContent,
+  component: Modal,
   parameters: {
     backgrounds: {
       default: 'concrete',
       values: [{ name: 'concrete', value: '#858585' }],
     },
   },
-} satisfies Meta<typeof ModalContent>
+  argTypes: {
+    size: {
+      defaultValue: 'sm',
+      control: 'select',
+      options: ['sm', 'lg'],
+    },
+  },
+} satisfies Meta<typeof Modal>
 
 export default ModalMeta
 
-type Story = StoryObj<typeof ModalContent>
+type Story = StoryObj<typeof Modal>
 
 export const ModalStory: Story = {
-  render: () => (
+  render: (args) => (
     <div className="">
-      <Modal>
-        <ModalContent>hello</ModalContent>
+      <Modal size={args.size}>
+        <Modal.Content className="text-white">
+          <Modal.Header>Modal Header</Modal.Header>
+          <p
+           className={clsx(
+            args.size === 'sm' ? 'text-base-xs' : 'text-base-sm',
+          )}
+          >
+
+          A window overlaid on either the primary window or another dialog window, rendering the content underneath
+          inert.
+          </p>
+          <Modal.StandardFooter
+          className={clsx(
+            args.size === 'sm' ? 'mt-4' : 'mt-5',
+          )}
+            primaryLabel="Save"
+            primaryAction={() => console.log('primary action')}
+            secondaryLabel="Cancel"
+            secondaryAction={() => console.log('secondary action')}
+          />
+        </Modal.Content>
       </Modal>
     </div>
   ),
