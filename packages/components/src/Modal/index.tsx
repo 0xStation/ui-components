@@ -7,12 +7,11 @@ import { ModalContext, useModalContext } from './ModalContext'
 
 export function Modal({
   children,
-  open,
   ...props
 }: { children: React.ReactNode; closeModal?: () => void } & React.ComponentProps<typeof Root> &
   React.ContextType<typeof ModalContext>) {
   return (
-    <Root open {...props}>
+    <Root {...props}>
       <Portal>
         <Overlay className="fixed inset-0 z-40 bg-[rbga(0,0,0,0.5)] backdrop-blur-sm  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
         <ModalContext.Provider value={{ size: props.size }}>{children}</ModalContext.Provider>

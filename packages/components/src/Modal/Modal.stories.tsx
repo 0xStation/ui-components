@@ -12,7 +12,12 @@ const ModalMeta = {
       values: [{ name: 'concrete', value: '#858585' }],
     },
   },
+
   argTypes: {
+    open: {
+      defaultValue: true,
+      control: 'boolean',
+    },
     size: {
       defaultValue: 'sm',
       control: 'select',
@@ -25,10 +30,12 @@ export default ModalMeta
 
 type Story = StoryObj<typeof Modal>
 
-export const ModalStory: Story = {
+export const Defaults: Story = {
   render: (args) => (
     <div className="">
-      <Modal size={args.size}>
+      <Modal size={args.size || 'sm'} 
+        open={args.open}
+      >
         <Modal.Content className="text-white">
           <Modal.Header>Modal Header</Modal.Header>
           <p
