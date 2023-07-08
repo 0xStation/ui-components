@@ -15,6 +15,7 @@ module.exports = {
       marbleWhite: '#F2EFEF',
       concrete50: '#4a4a4a',
       concrete70: '#626262',
+      concrete90: '#1A1A1A',
       concrete100: '#858585',
       concrete115: '#979797',
       'wet-concrete115': '#4d4d4d',
