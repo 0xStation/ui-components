@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.6
+
+### Patch Changes
+
+- ccf1260: fix relaese
+
 ## 0.0.5
 
 ### Patch Changes
