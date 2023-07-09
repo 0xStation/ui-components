@@ -12,5 +12,5 @@ jobs:
       nodeVersion: 18
       packageManager: pnpm
     secrets:
-      githubToken: ${{ secrets.GITHUB_TOKEN }}
+      githubToken: ${{ secrets.STATION_UI_TOKEN }}
       npmToken: ${{ secrets.NPM_AUTH_TOKEN }}
