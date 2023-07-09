@@ -2,8 +2,9 @@ import React from 'react'
 import { Root, Trigger, Portal, Overlay, Content, Close } from '@radix-ui/react-dialog'
 import { Close as CloseIcon } from '../icons/action/Close'
 import { cn } from '../../lib/utils'
-import { cva, VariantProps } from 'class-variance-authority'
+import { cva } from 'class-variance-authority'
 import { ModalContext, useModalContext } from './ModalContext'
+import { Button } from '../button'
 
 export function Modal({
   children,
@@ -148,41 +149,6 @@ export const ModalFooter = React.forwardRef<
 ))
 
 ModalFooter.displayName = 'ModalFooter'
-
-//temporary button setup
-const buttonVariants = cva(
-  'rounded-md text-center font-favoritpro border outline-none font-bold transition-all duration-75',
-  {
-    variants: {
-      variant: {
-        primary:
-          'bg-violet100 border-violet100 hover:opacity-80 !text-black disabled:opacity-50 disabled:cursor-not-allowed',
-        secondary:
-          'bg-transparent border-violet100 hover:bg-wet-concrete100 !text-violet100 disabled:opacity-50 disabled:cursor-not-allowed',
-      },
-      size: {
-        md: 'px-5 py-2 text-base-sm',
-        lg: 'px-6 py-3 text-base-md font-bold',
-      },
-      fullWidth: {
-        true: 'w-full',
-      },
-    },
-  },
-)
-
-const Button = React.forwardRef<
-  HTMLButtonElement,
-  React.ComponentPropsWithoutRef<'button'> &
-    VariantProps<typeof buttonVariants> & {
-      children: React.ReactNode
-      loading?: boolean
-    }
->(({ children, className, variant = 'primary', size = 'md', fullWidth, ...props }, ref) => (
-  <button ref={ref} className={cn(buttonVariants({ variant, size, fullWidth }), className)} {...props}>
-    {children}
-  </button>
-))
 
 Modal.Content = ModalContent
 Modal.StandardFooter = StandardModalFooter
