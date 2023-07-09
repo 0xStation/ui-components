@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.5
+
+### Patch Changes
+
+- ecda9aa: enable pre post script
+
 ## 0.0.4
 
 ### Patch Changes
