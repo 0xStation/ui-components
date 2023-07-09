@@ -4,10 +4,10 @@
   "scripts": {
     "format": "prettier . --write",
     "check": "pnpm -r check",
+    "prebuild":"echo 'prebuild'",
     "build": "pnpm -r build",
     "prettier": "prettier --write .",
-    "prerelase": "pnpm build",
-    "release": "changeset publish",
+    "release": "pnpm build && changeset publish",
     "changeset": "changeset"
   },
   "engines": {
