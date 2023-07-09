@@ -11,7 +11,7 @@ const buttonVariants = cva(
         primary: 'bg-violet100 border-violet100 hover:opacity-80 !text-black ',
         secondary: 'bg-transparent border-violet100 hover:bg-wet-concrete100 !text-violet100',
         input: 'bg-concrete90 border-concrete90 !text-marbleWhite hover:bg-wet-concrete115',
-        unemphasized : 'bg-transparent border-white hover:bg-wet-concrete100 !text-white',
+        unemphasized: 'bg-transparent border-white hover:bg-wet-concrete100 !text-white',
         error: 'bg-transparent border-red100 hover:bg-wet-concrete100 !text-red100',
       },
       size: {
