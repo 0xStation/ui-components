@@ -3,7 +3,7 @@
   "version": "0.0.6",
   "description": "Station UI components",
   "scripts": {
-    "build": "tsup && tsc --emitDeclarationOnly --declaration",
+    "build": "tsup && tsc --emitDeclarationOnly --declaration && node ./build.mjs",
     "check": "tsc --pretty && pnpm prettier --check .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
