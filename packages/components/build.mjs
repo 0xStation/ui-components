@@ -54,11 +54,12 @@ for (const relativePath of writtenFiles) {
   }
   if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
     const relativePathWithoutIndex = relativePath.replace('dist/', '').replace('/index.js', '').replace('.js', '')
+    const relativePathWithoutDist = relativePath.replace('dist/', '').replace('.js', '')
     exports['./' + relativePathWithoutIndex] = {
       import: './' + relativePath.replace('dist/', ''),
       types: './' + relativePathWithoutIndex + '.d.ts',
     }
-    typesVersions[relativePathWithoutIndex] = ['./' + relativePathWithoutIndex + '.d.ts']
+    typesVersions[relativePathWithoutIndex] = ['./' + relativePathWithoutDist + '.d.ts']
   }
 }
 
