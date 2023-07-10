@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.8
+
+### Patch Changes
+
+- 8068abc: fix imports
+
 ## 0.0.7
 
 ### Patch Changes
