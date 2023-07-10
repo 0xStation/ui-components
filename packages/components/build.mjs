@@ -29,7 +29,7 @@ const [pkgJson, writtenFiles] = await Promise.all([
   readFile('./package.json', 'utf-8').then(JSON.parse),
   readDirRecursive('./dist'),
 ])
-console.log(writtenFiles)
+
 /**
  * @type {Record<string, {import: string, types:string}>}
  */
@@ -53,15 +53,13 @@ for (const relativePath of writtenFiles) {
     process.exit(1)
   }
   if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
-    const relativePathWithoutIndex = relativePath
-      .slice(0, relativePath.length - '/index.js'.length)
-      .replace('dist/', '')
+    const relativePathWithoutIndex = relativePath.replace('dist/', '').replace('.js', '')
 
     exports['./' + relativePathWithoutIndex] = {
       import: './' + relativePath.replace('dist/', ''),
-      types: './' + relativePathWithoutIndex + '/index.d.ts',
+      types: './' + relativePathWithoutIndex + '.d.ts',
     }
-    typesVersions[relativePathWithoutIndex] = ['./' + relativePathWithoutIndex + '/index.d.ts']
+    typesVersions[relativePathWithoutIndex] = ['./' + relativePathWithoutIndex + '.d.ts']
   }
 }
 
