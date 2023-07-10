@@ -53,8 +53,7 @@ for (const relativePath of writtenFiles) {
     process.exit(1)
   }
   if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
-    const relativePathWithoutIndex = relativePath.replace('dist/', '').replace('.js', '')
-
+    const relativePathWithoutIndex = relativePath.replace('dist/', '').replace('/index.js', '').replace('.js', '')
     exports['./' + relativePathWithoutIndex] = {
       import: './' + relativePath.replace('dist/', ''),
       types: './' + relativePathWithoutIndex + '.d.ts',
