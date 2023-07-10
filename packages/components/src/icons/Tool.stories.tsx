@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Tool as ToolIcon } from './tool'
 
 const ToolMeta = {
-  title: 'Icons/Informative/Tool',
+  title: 'Icons/Tool',
   component: ToolIcon,
 } satisfies Meta<typeof ToolIcon>
 

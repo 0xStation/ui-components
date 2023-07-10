@@ -2,7 +2,7 @@ import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Cross as CrossIcon } from './cross'
 const CrossMeta = {
-  title: 'Icons/Informative/Cross',
+  title: 'Icons/Cross',
   component: CrossIcon,
 } satisfies Meta<typeof CrossIcon>
 

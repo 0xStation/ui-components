@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Search as SearchIcon } from './search'
 
 const SearchMeta = {
-  title: 'Icons/Informative/Search',
+  title: 'Icons/Search',
   component: SearchIcon,
 } satisfies Meta<typeof SearchIcon>
 

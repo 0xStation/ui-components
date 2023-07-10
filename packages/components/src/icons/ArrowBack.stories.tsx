@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ArrowBack as ArrowBackIcon } from './ArrowBack'
 
 const ArrowBackMeta = {
-  title: 'Icons/Actions/ArrowBack',
+  title: 'Icons/ArrowBack',
   component: ArrowBackIcon,
 } satisfies Meta<typeof ArrowBackIcon>
 

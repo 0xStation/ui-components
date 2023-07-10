@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Wallet as WalletIcon } from './wallet'
 
 const WalletMeta = {
-  title: 'Icons/Informative/Wallet',
+  title: 'Icons/Wallet',
   component: WalletIcon,
 } satisfies Meta<typeof WalletIcon>
 

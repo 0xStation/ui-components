@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Filter as FilterIcon } from './filter'
 
 const FilterMeta = {
-  title: 'Icons/Informative/Filter',
+  title: 'Icons/Filter',
   component: FilterIcon,
 } satisfies Meta<typeof FilterIcon>
 

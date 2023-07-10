@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Upload as UploadIcon } from './upload'
 
 const UploadMeta = {
-  title: 'Icons/Informative/Upload',
+  title: 'Icons/Upload',
   component: UploadIcon,
 } satisfies Meta<typeof UploadIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Pencil as PencilIcon } from './Pencil'
 
 const PencilMeta = {
-  title: 'Icons/Actions/Pencil',
+  title: 'Icons/Pencil',
   component: PencilIcon,
 } satisfies Meta<typeof PencilIcon>
 

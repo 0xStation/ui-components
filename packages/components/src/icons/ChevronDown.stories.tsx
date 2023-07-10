@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ChevronDown as ChevronDownIcon } from './ChevronDown'
 
 const ChevronDownMeta = {
-  title: 'Icons/Actions/ChevronDown',
+  title: 'Icons/ChevronDown',
   component: ChevronDownIcon,
 } satisfies Meta<typeof ChevronDownIcon>
 

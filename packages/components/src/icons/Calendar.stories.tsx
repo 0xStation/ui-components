@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar as CalendarIcon } from './calendar'
 
 const CalendarMeta = {
-  title: 'Icons/Informative/Calendar',
+  title: 'Icons/Calendar',
   component: CalendarIcon,
 } satisfies Meta<typeof CalendarIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Etherscan as EtherscanIcon } from './etherscan'
 
 const EtherscanMeta = {
-  title: 'Icons/Informative/Etherscan',
+  title: 'Icons/Etherscan',
   component: EtherscanIcon,
 } satisfies Meta<typeof EtherscanIcon>
 

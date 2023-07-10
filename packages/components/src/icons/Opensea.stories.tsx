@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Opensea as OpenseaIcon } from './opensea'
 
 const OpenseaMeta = {
-  title: 'Icons/Informative/Opensea',
+  title: 'Icons/Opensea',
   component: OpenseaIcon,
 } satisfies Meta<typeof OpenseaIcon>
 

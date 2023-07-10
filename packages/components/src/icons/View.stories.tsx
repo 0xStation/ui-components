@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { View as ViewIcon } from './view'
 
 const ViewMeta = {
-  title: 'Icons/Informative/View',
+  title: 'Icons/View',
   component: ViewIcon,
 } satisfies Meta<typeof ViewIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Close as CloseIcon } from './Close'
 
 const CloseMeta = {
-  title: 'Icons/Actions/Close',
+  title: 'Icons/Close',
   component: CloseIcon,
 } satisfies Meta<typeof CloseIcon>
 
