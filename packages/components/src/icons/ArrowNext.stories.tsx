@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ArrowNext as ArrowNextIcon } from './ArrowNext'
 
 const ArrowNextMeta = {
-  title: 'Icons/Actions/ArrowNext',
+  title: 'Icons/ArrowNext',
   component: ArrowNextIcon,
 } satisfies Meta<typeof ArrowNextIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Settings as SettingsIcon } from './Settings'
 
 const SettingsMeta = {
-  title: 'Icons/Actions/Settings',
+  title: 'Icons/Settings',
   component: SettingsIcon,
 } satisfies Meta<typeof SettingsIcon>
 

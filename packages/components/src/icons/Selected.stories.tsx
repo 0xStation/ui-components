@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Selected as SelectedIcon } from './selected'
 
 const SelectedMeta = {
-  title: 'Icons/Informative/Selected',
+  title: 'Icons/Selected',
   component: SelectedIcon,
 } satisfies Meta<typeof SelectedIcon>
 

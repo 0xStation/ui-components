@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Error as ErrorIcon } from './error'
 
 const ErrorMeta = {
-  title: 'Icons/Informative/Error',
+  title: 'Icons/Error',
   component: ErrorIcon,
 } satisfies Meta<typeof ErrorIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Info as InfoIcon } from './info'
 
 const InfoMeta = {
-  title: 'Icons/Informative/Info',
+  title: 'Icons/Info',
   component: InfoIcon,
 } satisfies Meta<typeof InfoIcon>
 

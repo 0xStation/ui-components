@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Loading as LoadingIcon } from './loading'
 
 const LoadingMeta = {
-  title: 'Icons/Informative/Loading',
+  title: 'Icons/Loading',
   component: LoadingIcon,
 } satisfies Meta<typeof LoadingIcon>
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Download as DownloadIcon } from './Download'
 
 const DownloadMeta = {
-  title: 'Icons/Actions/Download',
+  title: 'Icons/Download',
   component: DownloadIcon,
 } satisfies Meta<typeof DownloadIcon>
 

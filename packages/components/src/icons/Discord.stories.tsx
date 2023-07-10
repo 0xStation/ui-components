@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Discord as DiscordIcon } from './discord'
 
 const DiscordMeta = {
-  title: 'Icons/Informative/Discord',
+  title: 'Icons/Discord',
   component: DiscordIcon,
 } satisfies Meta<typeof DiscordIcon>
 

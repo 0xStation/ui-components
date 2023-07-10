@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Clipboard as ClipboardIcon } from './Clipboard'
 
 const ClipboardMeta = {
-  title: 'Icons/Actions/Clipboard',
+  title: 'Icons/Clipboard',
   component: ClipboardIcon,
 } satisfies Meta<typeof ClipboardIcon>
 
