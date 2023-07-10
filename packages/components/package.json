@@ -11,6 +11,7 @@
   },
   "publishConfig": {
     "access": "public",
+    "directory": "dist",
     "linkDirectory": false
   },
   "devDependencies": {
@@ -52,30 +53,6 @@
     "react": "*",
     "react-dom": "*"
   },
-  "main": "./dist/index.js",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./*": {
-      "import": "./dist/*.js",
-      "types": "./dist/*.d.ts"
-    }
-  },
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist",
-    "package.json"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/0xStation/ui-components.git"

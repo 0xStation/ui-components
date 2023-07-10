@@ -29,14 +29,14 @@ const [pkgJson, writtenFiles] = await Promise.all([
   readFile('./package.json', 'utf-8').then(JSON.parse),
   readDirRecursive('./dist'),
 ])
-
+console.log(writtenFiles)
 /**
  * @type {Record<string, {import: string, types:string}>}
  */
 const exports = {
-  './dist/*': {
-    import: './dist/*.js',
-    types: './dist/*.d.ts',
+  './*': {
+    import: './*.js',
+    types: './*.d.ts',
   },
 }
 
@@ -44,7 +44,7 @@ const exports = {
  * @type {Record<string,[string]>}
  */
 const typesVersions = {
-  '.': ['./dist/index.d.ts'],
+  '.': ['./index.d.ts'],
 }
 
 for (const relativePath of writtenFiles) {
@@ -52,22 +52,31 @@ for (const relativePath of writtenFiles) {
     console.error(`Package=${pkgJson.name}. Unexpected "dist" directory within built package. ${relativePath} `)
     process.exit(1)
   }
-  if (relativePath.endsWith('/index.js')) {
-    const relativePathWithoutIndex = relativePath.slice(0, relativePath.length - '/index.js'.length)
+  if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
+    const relativePathWithoutIndex = relativePath
+      .slice(0, relativePath.length - '/index.js'.length)
+      .replace('dist/', '')
 
-    exports['./' + relativePathWithoutIndex.replace('dist/', '')] = {
-      import: './' + relativePath,
+    exports['./' + relativePathWithoutIndex] = {
+      import: './' + relativePath.replace('dist/', ''),
       types: './' + relativePathWithoutIndex + '/index.d.ts',
     }
-    typesVersions[relativePathWithoutIndex.replace('dist/', '')] = ['./' + relativePathWithoutIndex + '/index.d.ts']
+    typesVersions[relativePathWithoutIndex] = ['./' + relativePathWithoutIndex + '/index.d.ts']
   }
 }
 
+delete pkgJson['publishConfig']
+delete pkgJson['devDependencies']
+delete pkgJson['files']
+delete pkgJson['scripts']
+
 await writeFile(
-  './package.json',
+  './dist/package.json',
   JSON.stringify(
     {
       ...pkgJson,
+      types: './index.d.ts',
+      main: './index.js',
       exports: {
         ...exports,
       },
