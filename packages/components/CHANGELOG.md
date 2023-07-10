@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.9
+
+### Patch Changes
+
+- 3ed988b: fix import types
+
 ## 0.0.8
 
 ### Patch Changes
