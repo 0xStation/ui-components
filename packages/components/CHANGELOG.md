@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.0.7
+
+### Patch Changes
+
+- 8cacd68: add build script
+  move icons out of folders
+
 ## 0.0.6
 
 ### Patch Changes
