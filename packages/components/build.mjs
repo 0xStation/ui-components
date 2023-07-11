@@ -52,7 +52,9 @@ for (const relativePath of writtenFiles) {
     console.error(`Package=${pkgJson.name}. Unexpected "dist" directory within built package. ${relativePath} `)
     process.exit(1)
   }
-  if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
+  
+
+   if (relativePath.endsWith('.js') && !relativePath.includes('chunk-')) {
     const relativePathWithoutIndex = relativePath.replace('dist/', '').replace('/index.js', '').replace('.js', '')
     const relativePathWithoutDist = relativePath.replace('dist/', '').replace('.js', '')
     exports['./' + relativePathWithoutIndex] = {
@@ -77,6 +79,8 @@ await writeFile(
       main: './index.js',
       exports: {
         ...exports,
+        'tailwind.css' : './tailwind.css',
+
       },
       typesVersions: {
         '*': { ...typesVersions },
