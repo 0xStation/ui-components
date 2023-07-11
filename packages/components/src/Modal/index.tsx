@@ -14,7 +14,7 @@ export function Modal({
   return (
     <Root {...props}>
       <Portal>
-        <Overlay className="fixed inset-0 z-40 bg-[rbga(0,0,0,0.5)] backdrop-blur-sm  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
+        <Overlay className="ui-fixed ui-inset-0 ui-z-40 ui-bg-[rbga(0,0,0,0.5)] ui-backdrop-blur-sm  data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0" />
         <ModalContext.Provider value={{ size: props.size }}>{children}</ModalContext.Provider>
       </Portal>
     </Root>
@@ -28,25 +28,25 @@ export const ModalContent = React.forwardRef<
   <Content
     ref={ref}
     className={cn(
-      'fixed left-[50%] top-[50%] z-50 grid w-full max-w-xl translate-x-[-50%] translate-y-[-50%] border bg-black pt-10 pb-4 px-5 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-outdata-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-md md:w-full text-white border-wet-concrete100 gap-4',
+      'ui-fixed ui-left-[50%] ui-top-[50%] ui-z-50 ui-grid ui-w-full ui-max-w-xl ui-translate-x-[-50%] ui-translate-y-[-50%] ui-border ui-bg-black ui-pt-10 ui-pb-4 ui-px-5 ui-shadow-lg ui-duration-200 data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0 data-[state=closed]:ui-zoom-out-95 data-[state=open]:ui-zoom-in-95 data-[state=closed]:ui-slide-out-to-left-1/2 data-[state=closed]:ui-slide-out-to-top-[48%] data-[state=open]:ui-slide-in-from-left-1/2 data-[state=open]:ui-slide-in-from-top-[48%] ui-rounded-md md:ui-w-full ui-text-white ui-border-wet-concrete100 ui-gap-4',
       className,
     )}
     {...props}
   >
     {!hideClose && (
-      <Close className="absolute right-4 top-4 [&_svg]:text-violet20 focus-visible:outline-wet-concrete100 group">
-        <CloseIcon className="w-6 h-6 fill-concrete100 group-hover:fill-white  transition-all" />
+      <Close className="ui-absolute ui-right-4 ui-top-4 [&_svg]:ui-text-violet20 focus-visible:ui-outline-wet-concrete100 group">
+        <CloseIcon className="ui-w-6 ui-h-6 ui-fill-concrete100 group-hover:ui-fill-white ui-transition-all" />
       </Close>
     )}
     {children}
   </Content>
 ))
 
-const headingVariants = cva('font-favoritpro text-marbleWhite capitalize', {
+const headingVariants = cva('ui-font-favoritpro ui-text-marbleWhite ui-capitalize', {
   variants: {
     size: {
-      sm: 'text-heading-lg font-bold',
-      lg: 'text-heading-2xl font-bold',
+      sm: 'ui-text-heading-lg ui-font-bold',
+      lg: 'ui-text-heading-2xl ui-font-bold',
     },
   },
 })
@@ -107,8 +107,8 @@ export const StandardModalFooter = React.forwardRef<
     const { size } = useModalContext()
     const buttonSize = size === 'sm' ? 'md' : 'lg'
     return (
-      <div className={cn('flex justify-end', className)} ref={ref}>
-        <div className="flex w-full md:w-1/2 flex-col-reverse sm:flex-row sm:justify-end gap-1 md:gap-2">
+      <div className={cn('ui-flex ui-justify-end', className)} ref={ref}>
+        <div className="ui-flex ui-w-full md:ui-w-1/2 ui-flex-col-reverse sm:ui-flex-row sm:ui-justify-end ui-gap-1 md:ui-gap-2">
           <Button
             fullWidth
             variant="secondary"
@@ -143,7 +143,7 @@ export const ModalFooter = React.forwardRef<
     className?: string
   }
 >(({ children, className }, ref) => (
-  <div className={cn('flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2', className)} ref={ref}>
+  <div className={cn('ui-flex ui-flex-col-reverse sm:ui-flex-row sm:ui-justify-end sm:ui-space-x-2', className)} ref={ref}>
     {children}
   </div>
 ))
