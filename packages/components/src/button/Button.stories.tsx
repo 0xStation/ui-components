@@ -20,6 +20,10 @@ const ButtonMeta = {
       defaultValue: false,
       control: 'boolean',
     },
+    fullWidth: {
+      defaultValue: false,
+      control: 'boolean',
+    },
   },
 } satisfies Meta<typeof Button>
 

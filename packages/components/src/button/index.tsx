@@ -4,23 +4,23 @@ import { cn } from '../lib/utils'
 
 //temporary button setup
 const buttonVariants = cva(
-  'flex items-center justify-center rounded-md text-center font-favoritpro border outline-none font-bold transition-all duration-75 h-full disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none',
+  'ui-flex ui-items-center ui-justify-center ui-rounded-md ui-text-center ui-font-favoritpro ui-border ui-outline-none ui-font-bold ui-transition-all ui-duration-75  disabled:ui-opacity-50 disabled:ui-cursor-not-allowed disabled:ui-pointer-events-none',
   {
     variants: {
       variant: {
-        primary: 'bg-violet100 border-violet100 hover:opacity-80 !text-black ',
-        secondary: 'bg-transparent border-violet100 hover:bg-wet-concrete100 !text-violet100',
-        input: 'bg-concrete90 border-concrete90 !text-marbleWhite hover:bg-wet-concrete115',
-        unemphasized: 'bg-transparent border-white hover:bg-wet-concrete100 !text-white',
-        error: 'bg-transparent border-red100 hover:bg-wet-concrete100 !text-red100',
+        primary: 'ui-bg-violet100 ui-border-violet100 hover:ui-opacity-80 !ui-text-black ',
+        secondary: 'ui-bg-transparent ui-border-violet100 hover:ui-bg-wet-concrete100 !ui-text-violet100',
+        input: 'ui-bg-concrete90 ui-border-concrete90 !ui-text-marbleWhite hover:ui-bg-wet-concrete115',
+        unemphasized: 'ui-bg-transparent ui-border-white hover:ui-bg-wet-concrete100 !ui-text-white',
+        error: 'ui-bg-transparent ui-border-red100 hover:ui-bg-wet-concrete100 !ui-text-red100',
       },
       size: {
-        sm: 'px-4 text-base-xxs max-h-7 h-7',
-        md: 'px-5 text-base-sm max-h-9 h-9',
-        lg: 'px-6 text-base-md max-h-11 h-11',
+        sm: 'ui-px-4 ui-text-base-xxs ui-max-h-7 ui-h-7',
+        md: 'ui-px-5 ui-text-base-sm ui-max-h-9 ui-h-9',
+        lg: 'ui-px-6 ui-text-base-md ui-max-h-11 ui-h-11',
       },
       fullWidth: {
-        true: 'w-full',
+        true: 'ui-w-full',
       },
     },
   },
@@ -33,7 +33,7 @@ export const Button = React.forwardRef<
       children: React.ReactNode
       loading?: boolean
     }
->(({ children, className, variant = 'primary', size = 'md', fullWidth, loading, ...props }, ref) => (
+>(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, ...props }, ref) => (
   <button ref={ref} className={cn(buttonVariants({ variant, size, fullWidth }), className)} {...props}>
     {loading ? <Spinner variant={variant} size={size} /> : children}
   </button>
@@ -42,16 +42,16 @@ export const Button = React.forwardRef<
 const spinnerVariants = cva('animate-spin', {
   variants: {
     variant: {
-      primary: 'text-black',
-      secondary: 'text-violet100',
-      input: 'text-marbleWhite',
-      unemphasized: 'text-white',
-      error: 'text-red100',
+      primary: 'ui-text-black',
+      secondary: 'ui-text-violet100',
+      input: 'ui-text-marbleWhite',
+      unemphasized: 'ui-text-white',
+      error: 'ui-text-red100',
     },
     size: {
-      sm: 'w-5 h-5',
-      md: 'w-6 h-6',
-      lg: 'w-8 h-8',
+      sm: 'ui-w-5 ui-h-5',
+      md: 'ui-w-6 ui-h-6',
+      lg: 'ui-w-8 ui-h-8',
     },
   },
 })
