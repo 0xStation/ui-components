@@ -143,7 +143,10 @@ export const ModalFooter = React.forwardRef<
     className?: string
   }
 >(({ children, className }, ref) => (
-  <div className={cn('ui-flex ui-flex-col-reverse sm:ui-flex-row sm:ui-justify-end sm:ui-space-x-2', className)} ref={ref}>
+  <div
+    className={cn('ui-flex ui-flex-col-reverse sm:ui-flex-row sm:ui-justify-end sm:ui-space-x-2', className)}
+    ref={ref}
+  >
     {children}
   </div>
 ))

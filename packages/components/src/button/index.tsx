@@ -33,7 +33,7 @@ export const Button = React.forwardRef<
       children: React.ReactNode
       loading?: boolean
     }
->(({ children, className, variant = 'primary', size = 'md', fullWidth=false, loading, ...props }, ref) => (
+>(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, ...props }, ref) => (
   <button ref={ref} className={cn(buttonVariants({ variant, size, fullWidth }), className)} {...props}>
     {loading ? <Spinner variant={variant} size={size} /> : children}
   </button>
