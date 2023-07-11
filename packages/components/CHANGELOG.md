@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.10
+
+### Patch Changes
+
+- 16dc9c9: fix tailwind conflict by adding prefix
+
 ## 0.0.9
 
 ### Patch Changes
