@@ -78,9 +78,8 @@ await writeFile(
       types: './index.d.ts',
       main: './index.js',
       exports: {
+        './tailwind.css' : './tailwind.css',
         ...exports,
-        'tailwind.css' : './tailwind.css',
-
       },
       typesVersions: {
         '*': { ...typesVersions },
