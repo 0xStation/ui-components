@@ -13,7 +13,7 @@ export const Search = ({
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke={stroke || '#ffffff'}
-      className={clsx(className || 'w-6 h-6 aspect-square')}
+      className={clsx(className || 'ui-w-6 ui-h-6 ui-aspect-square')}
       {...props}
     >
       <path

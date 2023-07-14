@@ -11,7 +11,7 @@ export const Info = ({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill={fill || '#ffffff'}
-      className={clsx(className || 'w-6 h-6 aspect-square')}
+      className={clsx(className || 'ui-w-6 ui-h-6 ui-aspect-square')}
       {...props}
     >
       <path

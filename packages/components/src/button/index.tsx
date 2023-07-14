@@ -10,7 +10,7 @@ const buttonVariants = cva(
       variant: {
         primary: 'ui-bg-violet100 ui-border-violet100 hover:ui-opacity-80 !ui-text-black ',
         secondary: 'ui-bg-transparent ui-border-violet100 hover:ui-bg-wet-concrete100 !ui-text-violet100',
-        input: 'ui-bg-concrete90 ui-border-concrete90 !ui-text-marbleWhite hover:ui-bg-wet-concrete115',
+        input: 'ui-bg-wet-concrete90 ui-border-wet-concrete90 !ui-text-marbleWhite hover:ui-bg-wet-concrete115',
         unemphasized: 'ui-bg-transparent ui-border-white hover:ui-bg-wet-concrete100 !ui-text-white',
         error: 'ui-bg-transparent ui-border-red100 hover:ui-bg-wet-concrete100 !ui-text-red100',
       },
