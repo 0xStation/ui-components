@@ -1,5 +1,5 @@
-import clsx from "clsx"
-import React from "react"
+import clsx from 'clsx'
+import React from 'react'
 
 export const MembersCard = ({
   title,
@@ -18,36 +18,28 @@ export const MembersCard = ({
    */
   hoverEffect?: boolean
 }) => {
-  const hasImgSrc = typeof image === "string"
+  const hasImgSrc = typeof image === 'string'
 
   const img = hasImgSrc ? (
-    <img
-      src={image}
-      alt={title}
-      className="w-full h-full object-cover rounded-md "
-    />
+    <img src={image} alt={title} className="ui-w-full ui-h-full ui-object-cover ui-rounded-md" />
   ) : (
     image
   )
   return (
-    <div className="flex flex-col w-full max-w-[257px] gap-2 md:gap-3 group hover:bg-wet-concrete90 rounded-lg p-2">
-      <div className="w-full max-w-[241px] overflow-hidden rounded-md relative aspect-square">
+    <div className="ui-flex ui-flex-col ui-w-full ui-max-w-[257px] ui-gap-2 md:ui-gap-3 group hover:ui-bg-wet-concrete90 ui-rounded-lg ui-p-2">
+      <div className="ui-w-full ui-max-w-[241px] ui-overflow-hidden ui-rounded-md ui-relative ui-aspect-square">
         <div
           className={clsx(
-            "bg-concrete90 w-full transition-all duration-300 aspect-square",
-            hoverEffect && "group-hover:scale-125 ",
+            'ui-bg-wet-concrete90 ui-w-full ui-transition-all ui-duration-300 ui-aspect-square',
+            hoverEffect && 'group-hover:ui-scale-125 ',
           )}
         >
           {img}
         </div>
       </div>
-      <div className="flex flex-col font-favoritpro ">
-        <h3 className="text-heading-m md:text-heading-l">{title}</h3>
-        {subText && (
-          <p className="text-body-s md:text-body-m text-concrete100">
-            {subText}
-          </p>
-        )}
+      <div className="ui-flex ui-flex-col ui-font-favoritpro ">
+        <h3 className="ui-text-heading-md md:ui-text-heading-lg ui-text-white">{title}</h3>
+        {subText && <p className="ui-text-base-sm md:ui-text-base-md ui-text-concrete100">{subText}</p>}
       </div>
     </div>
   )

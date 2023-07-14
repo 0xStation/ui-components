@@ -14,6 +14,7 @@ const config = {
       },
     },
   ],
+  staticDirs: ['../public'], //👈 Configures the static asset folder in Storybook
   framework: {
     name: '@storybook/react-vite',
   },
