@@ -13,7 +13,7 @@ type Story = StoryObj<typeof SearchIcon>
 
 export const Search: Story = {
   render: () => (
-    <div className="bg-wet-concrete100 w-20 h-20 border border-slate-400 border-dashed flex items-center justify-center rounded-md">
+    <div className="ui-bg-wet-concrete100 ui-w-20 ui-h-20 ui-border ui-border-slate-400 ui-border-dashed ui-flex ui-items-center ui-justify-center ui-rounded-md">
       <SearchIcon />
     </div>
   ),
