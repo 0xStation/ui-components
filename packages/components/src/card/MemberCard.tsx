@@ -5,7 +5,7 @@ export const MembersCard = ({
   title,
   subText,
   image,
-  hoverEffect,
+  hoverEffect = false,
 }: {
   title: string
   subText?: string
@@ -26,14 +26,14 @@ export const MembersCard = ({
     image
   )
   return (
-    <div className="ui-flex ui-flex-col ui-w-full ui-max-w-[257px] ui-gap-2 md:ui-gap-3 group hover:ui-bg-wet-concrete90 ui-rounded-lg ui-p-2">
+    <div
+      className={clsx(
+        'ui-flex ui-flex-col ui-w-full ui-max-w-[257px] ui-gap-2 md:ui-gap-3 hover:ui-bg-wet-concrete90 ui-rounded-lg ui-p-2',
+        hoverEffect && 'hover:[&_img]:ui-scale-125',
+      )}
+    >
       <div className="ui-w-full ui-max-w-[241px] ui-overflow-hidden ui-rounded-md ui-relative ui-aspect-square">
-        <div
-          className={clsx(
-            'ui-bg-wet-concrete90 ui-w-full ui-transition-all ui-duration-300 ui-aspect-square',
-            hoverEffect && 'group-hover:ui-scale-125 ',
-          )}
-        >
+        <div className="ui-bg-wet-concrete90 ui-w-full [&_img]:ui-transition-all [&_img]:ui-duration-300 ui-aspect-square">
           {img}
         </div>
       </div>
