@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.11
+
+### Patch Changes
+
+- 6a08f5f: add member card component
+
 ## 0.0.10
 
 ### Patch Changes
