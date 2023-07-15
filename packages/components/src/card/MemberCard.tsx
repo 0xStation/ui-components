@@ -38,8 +38,8 @@ export const MembersCard = ({
         </div>
       </div>
       <div className="ui-flex ui-flex-col ui-font-favoritpro ">
-        <h3 className="ui-text-heading-md md:ui-text-heading-lg ui-text-white">{title}</h3>
-        {subText && <p className="ui-text-base-sm md:ui-text-base-md ui-text-concrete100">{subText}</p>}
+        <h3 className="ui-text-heading-sm md:ui-text-heading-md 2xl:ui-text-heading-lg ui-text-white ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">{title}</h3>
+        {subText && <p className="ui-text-base-xs md:ui-text-base-sm 2xl:ui-text-heading-md ui-text-concrete100 ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">{subText}</p>}
       </div>
     </div>
   )
