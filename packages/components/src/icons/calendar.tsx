@@ -5,7 +5,7 @@ export const Calendar = ({
   className,
   fill,
   ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' | 'strokeWidth'>) => {
+}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' >) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
