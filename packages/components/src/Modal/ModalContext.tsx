@@ -2,6 +2,7 @@ import React from 'react'
 
 export const ModalContext = React.createContext<{
   size: 'sm' | 'lg'
+  closeModal?: () => void
 }>({
   size: 'sm',
 })
