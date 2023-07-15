@@ -1,5 +1,5 @@
 import React from 'react'
-import { Root, Trigger, Portal, Overlay, Content, Close } from '@radix-ui/react-dialog'
+import { Root, Portal, Overlay, Content, Close } from '@radix-ui/react-dialog'
 import { Close as CloseIcon } from '../icons/Close'
 import { cn } from '../lib/utils'
 import { cva } from 'class-variance-authority'
@@ -157,3 +157,5 @@ Modal.Content = ModalContent
 Modal.StandardFooter = StandardModalFooter
 Modal.Footer = ModalFooter
 Modal.Header = ModalHeader
+
+export { Root, Portal }
