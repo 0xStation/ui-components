@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.0.14
+
+### Patch Changes
+
+- 98fb49e: modal ui updates
+  icon prop updates
+
 ## 0.0.13
 
 ### Patch Changes
