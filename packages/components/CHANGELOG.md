@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.0.12
+
+### Patch Changes
+
+- 4720bc8: fix hover effect on member card
+  expose Root and Portal in Modal
+
 ## 0.0.11
 
 ### Patch Changes
