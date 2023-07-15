@@ -4,14 +4,15 @@ import clsx from 'clsx'
 export const Wallet = ({
   className,
   fill,
+  strokeWidth,
   ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' | 'strokeWidth'>) => {
+}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox'>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill || '#ffffff'}
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
+      strokeWidth={strokeWidth || 1.5}
       className={clsx(className || 'ui-w-6 ui-h-6 ui-aspect-square')}
       {...props}
     >
