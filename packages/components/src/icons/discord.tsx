@@ -1,10 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 
-export const Discord = ({
-  className,
-  ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' | 'strokeWidth'>) => {
+export const Discord = ({ className, ...props }: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox'>) => {
   return (
     <svg
       viewBox="0 0 24 24"

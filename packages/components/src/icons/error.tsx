@@ -1,11 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 
-export const Error = ({
-  className,
-  fill,
-  ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox' | 'strokeWidth'>) => {
+export const Error = ({ className, fill, ...props }: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'viewBox'>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

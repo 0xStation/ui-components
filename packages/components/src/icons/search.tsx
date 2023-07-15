@@ -4,14 +4,15 @@ import clsx from 'clsx'
 export const Search = ({
   className,
   stroke,
+  strokeWidth,
   ...props
-}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'fill' | 'viewBox' | 'strokeWidth'>) => {
+}: Omit<React.SVGProps<SVGSVGElement>, 'xmlns' | 'fill' | 'viewBox'>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
+      strokeWidth={strokeWidth || 1.5}
       stroke={stroke || '#ffffff'}
       className={clsx(className || 'ui-w-6 ui-h-6 ui-aspect-square')}
       {...props}
