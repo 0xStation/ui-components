@@ -41,9 +41,9 @@ export const ModalContent = React.forwardRef<
         <Close
           asChild
           onClick={closeModal}
-          className="ui-cursor-pointer ui-absolute ui-right-4 ui-top-4 [&_svg]:ui-text-violet20 focus-visible:ui-outline-wet-concrete100 group focus:ui-outline-none focus-visible:ui-outline-none"
+          className="ui-cursor-pointer ui-absolute ui-right-4 ui-top-4 [&_svg]:ui-text-violet20 focus-visible:ui-outline-wet-concrete100 focus:ui-outline-none focus-visible:ui-outline-none"
         >
-          <CloseIcon className="ui-w-6 ui-h-6 ui-fill-concrete100 group-hover:ui-fill-white ui-transition-all" />
+          <CloseIcon className="ui-w-6 ui-h-6 ui-fill-concrete100 hover:ui-fill-white ui-transition-all" />
         </Close>
       )}
       {children}
