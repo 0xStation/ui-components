@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.0.15
+
+### Patch Changes
+
+- 68491a0: add hover on close in modal
+  truncate long text in member card
+
 ## 0.0.14
 
 ### Patch Changes

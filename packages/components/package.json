@@ -1,6 +1,6 @@
 {
   "name": "@groupos/ui-components",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Station UI components",
   "scripts": {
     "build": "tsup && tsc --emitDeclarationOnly --declaration && node ./build.mjs",
