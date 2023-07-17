@@ -38,7 +38,7 @@ export const MembersCard = ({
         </div>
       </div>
       <div className="ui-flex ui-flex-col ui-font-favoritpro ">
-        <h3 className="ui-text-heading-sm md:ui-text-heading-md 2xl:ui-text-heading-lg ui-text-white ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">
+        <h3 className="ui-text-heading-sm md:ui-text-heading-md 2xl:ui-text-heading-lg ui-text-white ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden ui-font-bold">
           {title}
         </h3>
         {subText && (
