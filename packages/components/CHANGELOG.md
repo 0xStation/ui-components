@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.16
+
+### Patch Changes
+
+- c6881c4: bold title in member card"
+
 ## 0.0.15
 
 ### Patch Changes
