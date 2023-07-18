@@ -9,10 +9,10 @@ import { Button } from '../button'
 export function Modal({
   children,
   ...props
-}: { children: React.ReactNode; closeModal?: () => void } & React.ComponentProps<typeof Root> &
+}: { children: React.ReactNode; closeModal?: () => void } & Omit<React.ComponentProps<typeof Root>, 'open'> &
   React.ContextType<typeof ModalContext>) {
   return (
-    <Root {...props}>
+    <Root open {...props}>
       <Portal>
         <Overlay className="ui-fixed ui-inset-0 ui-z-40 ui-bg-[rbga(0,0,0,0.5)] ui-backdrop-blur-sm  data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0" />
         <ModalContext.Provider value={{ size: props.size, closeModal: props.closeModal }}>
@@ -43,7 +43,7 @@ export const ModalContent = React.forwardRef<
           onClick={closeModal}
           className="ui-cursor-pointer ui-absolute ui-right-4 ui-top-4 [&_svg]:ui-text-violet20 focus-visible:ui-outline-wet-concrete100 focus:ui-outline-none focus-visible:ui-outline-none"
         >
-          <CloseIcon className="ui-w-6 ui-h-6 ui-fill-concrete100 hover:ui-fill-white ui-transition-all" />
+          <CloseIcon className="ui-w-6 ui-h-6 ui-fill-gray-50 hover:ui-fill-white ui-transition-all" />
         </Close>
       )}
       {children}

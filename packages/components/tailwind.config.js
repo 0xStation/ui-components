@@ -14,11 +14,15 @@ module.exports = {
       slate: colors.slate,
       black: colors.black,
       marbleWhite: '#F2EFEF',
-      concrete50: '#4a4a4a',
-      concrete70: '#626262',
-      concrete100: '#858585',
-      concrete115: '#979797',
-      'wet-concrete115': '#4d4d4d',
+      gray: {
+        30: "#858585", // concrete 50
+        40: "#979797", // concrete 115
+        50: "#646464", // concrete 100
+        80: "#4d4d4d", // wet-concrete 115
+        90: "#2E2E2E", // wet-concrete 100
+        100: "#1A1A1A", // wet-concrete 90
+      },
+ 
       'wet-concrete100': '#2e2e2e',
       'wet-concrete90': '#1A1A1A',
       'marble-white100': '#ffffff',
@@ -28,13 +32,21 @@ module.exports = {
       orange20: 'rgba(255, 153, 86, 0.2)',
       orange80: 'rgba(255, 153, 86, 0.8)',
       orange100: '#FF9956',
-      red20: 'rgba(255, 86, 80, 0.2)',
-      red100: '#FF5650',
-      violet20: '#684499',
-      violet80: '#462F64',
-      violet100: '#AD72FF',
-      'frequency-yellow100': '#CEDC4B',
-      magenta100: '#F866A3',
+      red: {
+        20: 'rgba(255, 86, 80, 0.2)',
+        100: '#FF5650',
+      },
+      violet : {
+        20: '#684499',
+        80: '#462F64',
+        100: '#AD72FF',
+      },
+      yellow: {
+        80: '#CEDC4B'
+      },
+      magenta: {
+        100: '#F866A3',
+      }
     },
     extend: {
       fontSize: {

@@ -14,10 +14,6 @@ const ModalMeta = {
   },
 
   argTypes: {
-    open: {
-      defaultValue: true,
-      control: 'boolean',
-    },
     size: {
       defaultValue: 'sm',
       control: 'select',
@@ -33,7 +29,7 @@ type Story = StoryObj<typeof Modal>
 export const Defaults: Story = {
   render: (args) => (
     <div className="">
-      <Modal size={args.size || 'sm'} open={args.open}>
+      <Modal size={args.size || 'sm'}>
         <Modal.Content className="text-white">
           <Modal.Header>Modal Header</Modal.Header>
           <p className={clsx(args.size === 'sm' ? 'text-base-xs' : 'text-base-sm')}>
