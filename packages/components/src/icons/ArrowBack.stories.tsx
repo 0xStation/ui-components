@@ -13,8 +13,14 @@ type Story = StoryObj<typeof ArrowBackIcon>
 
 export const ArrowBack: Story = {
   render: () => (
-    <div className="ui-bg-wet-concrete100 ui-w-20 ui-h-20 ui-border ui-border-slate-400 ui-border-dashed ui-flex ui-items-center ui-justify-center ui-rounded-md">
+    <IconWrapper>
       <ArrowBackIcon />
-    </div>
+    </IconWrapper>
   ),
 }
+
+export const IconWrapper = ({ children }: { children: React.ReactNode }) => (
+  <div className="ui-bg-gray-90 ui-w-20 ui-h-20 ui-border ui-border-slate-400 ui-border-dashed ui-flex ui-items-center ui-justify-center ui-rounded-md">
+    {children}
+  </div>
+)
