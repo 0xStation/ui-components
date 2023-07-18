@@ -42,7 +42,7 @@ export const MembersCard = ({
           {title}
         </h3>
         {subText && (
-          <p className="ui-text-base-xs md:ui-text-base-sm 2xl:ui-text-heading-md ui-text-concrete100 ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">
+          <p className="ui-text-base-xs md:ui-text-base-sm 2xl:ui-text-heading-md ui-text-gray-50 ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">
             {subText}
           </p>
         )}
