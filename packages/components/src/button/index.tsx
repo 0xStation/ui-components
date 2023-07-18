@@ -8,9 +8,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'ui-bg-violet100 ui-border-violet100 hover:ui-opacity-80 !ui-text-black ',
-        secondary: 'ui-bg-transparent ui-border-violet100 hover:ui-bg-gray-90 !ui-text-violet100',
-        input: 'ui-bg-wet-concrete90 ui-border-wet-concrete90 !ui-text-marbleWhite hover:ui-bg-gray-80',
+        primary: 'ui-bg-violet-100 ui-border-violet-100 hover:ui-opacity-80 !ui-text-black ',
+        secondary: 'ui-bg-transparent ui-border-violet-100 hover:ui-bg-gray-90 !ui-text-violet-100',
+        input: 'ui-bg-gray-100 ui-border-gray-100 !ui-text-marbleWhite hover:ui-bg-gray-80',
         unemphasized: 'ui-bg-transparent ui-border-white hover:ui-bg-gray-90 !ui-text-white',
         error: 'ui-bg-transparent ui-border-red100 hover:ui-bg-gray-90 !ui-text-red100',
       },
@@ -43,7 +43,7 @@ const spinnerVariants = cva('animate-spin', {
   variants: {
     variant: {
       primary: 'ui-text-black',
-      secondary: 'ui-text-violet100',
+      secondary: 'ui-text-violet-100',
       input: 'ui-text-marbleWhite',
       unemphasized: 'ui-text-white',
       error: 'ui-text-red100',

@@ -22,16 +22,19 @@ module.exports = {
         90: "#2E2E2E", // wet-concrete 100
         100: "#1A1A1A", // wet-concrete 90
       },
- 
-      'wet-concrete100': '#2e2e2e',
-      'wet-concrete90': '#1A1A1A',
-      'marble-white100': '#ffffff',
-      blue100: '#5f6fff',
-      green20: 'rgba(99, 235, 175, 0.20))',
-      green100: '#63ebaf',
-      orange20: 'rgba(255, 153, 86, 0.2)',
-      orange80: 'rgba(255, 153, 86, 0.8)',
-      orange100: '#FF9956',
+      blue: {
+        100: '#5F6FFF',
+      },
+      green: {
+        20: 'rgba(99, 235, 175, 0.20))',
+        100: '#63EBAF', 
+      },
+      orange: {
+        20: 'rgba(255, 153, 86, 0.2)',
+        80: 'rgba(255, 153, 86, 0.8)',
+        100: '#FF9956',
+      },
+  
       red: {
         20: 'rgba(255, 86, 80, 0.2)',
         100: '#FF5650',
