@@ -67,6 +67,7 @@
   },
   "homepage": "https://github.com/0xStation/ui-components#readme",
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.0.4"
+    "@radix-ui/react-dialog": "^1.0.4",
+    "react-hook-form": "^7.45.2"
   }
 }
