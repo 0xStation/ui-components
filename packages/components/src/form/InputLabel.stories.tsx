@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { useForm } from 'react-hook-form'
-import { TextInput, TextInputProps } from './TextInput'
+import { TextInput } from './TextInput'
 import { InputLabel } from './InputLabel'
 import { Button } from '../button'
 
