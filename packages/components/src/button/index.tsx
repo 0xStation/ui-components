@@ -8,11 +8,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'ui-bg-violet-100 ui-border-violet-100 hover:ui-opacity-80 !ui-text-black ',
-        secondary: 'ui-bg-transparent ui-border-violet-100 hover:ui-bg-gray-90 !ui-text-violet-100',
-        input: 'ui-bg-gray-100 ui-border-gray-100 !ui-text-marbleWhite hover:ui-bg-gray-80',
-        unemphasized: 'ui-bg-transparent ui-border-white hover:ui-bg-gray-90 !ui-text-white',
-        error: 'ui-bg-transparent ui-border-red100 hover:ui-bg-gray-90 !ui-text-red100',
+        primary: '!ui-bg-violet-100 ui-border-violet-100 hover:ui-opacity-80 !ui-text-black ',
+        secondary: '!ui-bg-transparent ui-border-violet-100 hover:ui-bg-gray-90 !ui-text-violet-100',
+        input: '!ui-bg-gray-100 ui-border-gray-100 !ui-text-marbleWhite hover:ui-bg-gray-80',
+        unemphasized: '!ui-bg-transparent ui-border-white hover:ui-bg-gray-90 !ui-text-white',
+        error: '!ui-bg-transparent ui-border-red-100 hover:ui-bg-gray-90 !ui-text-red-100',
       },
       size: {
         sm: 'ui-px-4 ui-text-base-xxs ui-max-h-7 ui-h-7',
