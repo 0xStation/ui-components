@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.18
+
+### Patch Changes
+
+- 5310a1a: fix colors
+
 ## 0.0.17
 
 ### Patch Changes
