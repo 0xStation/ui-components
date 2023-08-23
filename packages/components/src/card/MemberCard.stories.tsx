@@ -15,7 +15,7 @@ export default MemberCardMeta
 
 type Story = StoryObj<typeof MembersCard>
 
-export const ArrowBack: Story = {
+export const MemberCard: Story = {
   render: ({ image, ...rest }) => (
     <div>
       <MembersCard image="/images/cardPlaceholder.png" {...rest} />
