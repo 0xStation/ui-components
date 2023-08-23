@@ -5,27 +5,9 @@ import { MembersCard } from './MemberCard'
 const MemberCardMeta = {
   title: 'cards/MemberCard',
   component: MembersCard,
-
   args: {
     title: 'Title',
     subText: 'Subtext',
-  },
-  argTypes: {
-    title: {
-      defaultValue: 'Title',
-      control: {
-        type: 'text',
-      },
-    },
-    subText: {
-      defaultValue: 'Subtext',
-      control: {
-        type: 'text',
-      },
-    },
-    image: {
-      disabled: true,
-    },
   },
 } satisfies Meta<typeof MembersCard>
 
