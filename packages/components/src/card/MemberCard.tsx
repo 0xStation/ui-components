@@ -28,7 +28,8 @@ export const MembersCard = ({
   return (
     <div
       className={clsx(
-        'ui-flex ui-flex-col ui-w-full ui-max-w-[257px] ui-gap-2 md:ui-gap-3 hover:ui-bg-gray-100 ui-rounded-lg ui-p-2',
+        // TODO: add hover effect back back after more public collections 'hover:ui-bg-gray-100 ui-rounded-lg ui-p-2'
+        'ui-flex ui-flex-col ui-w-full ui-max-w-[257px] ui-gap-2 md:ui-gap-3 ',
         hoverEffect && 'hover:[&_img]:ui-scale-125',
       )}
     >
