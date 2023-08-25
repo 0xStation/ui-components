@@ -43,7 +43,7 @@ export const MembersCard = ({
           {title}
         </h3>
         {subText && (
-          <span className="ui-text-base-xs md:ui-text-base-sm 2xl:ui-text-heading-md ui-text-orange ui-bg-orange-50 ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden ui-rounded-full io-px-2 ui-py-1">
+          <span className="ui-text-base-xs md:ui-text-base-sm 2xl:ui-text-heading-md ui-text-orange ui-bg-orange-50 ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden ui-rounded-full ui-px-2 ui-py-1">
             {subText}
         </span>
         )}
