@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Loading as LoadingIcon } from './loading'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './arrowBack'
 
 const LoadingMeta = {
   title: 'Icons/Loading',

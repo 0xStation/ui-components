@@ -4,7 +4,7 @@ import { cn } from '../lib/utils'
 
 //temporary button setup
 const buttonVariants = cva(
-  'ui-flex ui-items-center ui-justify-center ui-rounded-md ui-text-center ui-font-favoritpro ui-border ui-outline-none ui-font-bold ui-transition-all ui-duration-75  disabled:ui-opacity-50 disabled:ui-cursor-not-allowed disabled:ui-pointer-events-none',
+  'ui-flex ui-flex-shrink ui-items-center ui-justify-center ui-rounded-md ui-text-center ui-font-favoritpro ui-border ui-outline-none ui-font-bold ui-transition-all ui-duration-75  disabled:ui-opacity-50 disabled:ui-cursor-not-allowed disabled:ui-pointer-events-none ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden',
   {
     variants: {
       variant: {
@@ -35,7 +35,13 @@ export const Button = React.forwardRef<
     }
 >(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, ...props }, ref) => (
   <button ref={ref} className={cn(buttonVariants({ variant, size, fullWidth }), className)} {...props}>
-    {loading ? <Spinner variant={variant} size={size} /> : children}
+    {loading ? (
+      <Spinner variant={variant} size={size} />
+    ) : typeof children === 'string' ? (
+      <div className="ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">{children}</div>
+    ) : (
+      children
+    )}
   </button>
 ))
 

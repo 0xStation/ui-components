@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Selected as SelectedIcon } from './selected'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './arrowBack'
 
 const SelectedMeta = {
   title: 'Icons/Selected',
