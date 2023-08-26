@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Calendar as CalendarIcon } from './Calendar'
+import { Calendar as CalendarIcon } from './calendar'
 import { IconWrapper } from './arrowBack'
 
 const CalendarMeta = {
