@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Upload as UploadIcon } from './Upload'
-import { IconWrapper } from './ArrowBack'
+import { IconWrapper } from './arrowBack'
 
 const UploadMeta = {
   title: 'Icons/Upload',

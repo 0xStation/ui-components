@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Close as CloseIcon } from './Close'
-import { IconWrapper } from './ArrowBack'
+import { IconWrapper } from './arrowBack'
 
 const CloseMeta = {
   title: 'Icons/Close',
