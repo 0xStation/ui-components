@@ -12,7 +12,7 @@ export function Modal({
 }: { children: React.ReactNode; closeModal?: () => void } & Omit<React.ComponentProps<typeof Root>, 'open'> &
   React.ContextType<typeof ModalContext>) {
   return (
-    <Root open {...props} >
+    <Root open {...props}>
       <Portal>
         <Overlay className="ui-fixed ui-inset-0 ui-z-40 ui-bg-[rbga(0,0,0,0.5)] ui-backdrop-blur-sm  data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0" />
         <ModalContext.Provider value={{ size: props.size, closeModal: props.closeModal }}>

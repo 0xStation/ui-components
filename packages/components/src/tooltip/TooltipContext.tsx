@@ -1,21 +1,17 @@
 import React from 'react'
 
-
 type TooltipContextType = {
-  openContent: boolean;
+  openContent: boolean
   // for react state dispatch
-  setOpenContent: (open: boolean) => void;
-};
+  setOpenContent: (open: boolean) => void
+}
 
 /**
  *
  *    // Radix tooltips are not designed to work with touch by default this is a workaround for mobile
  *    // https://github.com/radix-ui/primitives/issues/955#issuecomment-1144445691
  */
-const TooltipContext = React.createContext<TooltipContextType>(
-  null as unknown as TooltipContextType,
-);
-
+const TooltipContext = React.createContext<TooltipContextType>(null as unknown as TooltipContextType)
 
 export function useTooltipContext() {
   const context = React.useContext(TooltipContext)
@@ -26,17 +22,14 @@ export function useTooltipContext() {
   return context
 }
 
-export function TooltipContextProvider({
-  children,
-  ...contextArg
-}: { children: React.ReactNode } ) {
-  const [openContent, setOpenContent] = React.useState(false);
+export function TooltipContextProvider({ children, ...contextArg }: { children: React.ReactNode }) {
+  const [openContent, setOpenContent] = React.useState(false)
 
   const context = {
     openContent,
     setOpenContent,
     ...contextArg,
-  };
+  }
 
-  return <TooltipContext.Provider value={context}>{children}</TooltipContext.Provider>;
+  return <TooltipContext.Provider value={context}>{children}</TooltipContext.Provider>
 }
