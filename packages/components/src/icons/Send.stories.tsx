@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Send as SendIcon } from './Send'
+import { Send as SendIcon } from './send'
 import { IconWrapper } from './arrowBack'
 
 const SendMeta = {

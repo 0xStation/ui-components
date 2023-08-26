@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Swap as SwapIcon } from './Swap'
+import { Swap as SwapIcon } from './swap'
 import { IconWrapper } from './arrowBack'
 
 const SwapMeta = {

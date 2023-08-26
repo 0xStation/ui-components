@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Download as DownloadIcon } from './Download'
+import { Download as DownloadIcon } from './download'
 import { IconWrapper } from './arrowBack'
 
 const DownloadMeta = {

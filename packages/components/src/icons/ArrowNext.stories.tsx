@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { ArrowNext as ArrowNextIcon } from './ArrowNext'
+import { ArrowNext as ArrowNextIcon } from './arrowNext'
 import { IconWrapper } from './arrowBack'
 
 const ArrowNextMeta = {

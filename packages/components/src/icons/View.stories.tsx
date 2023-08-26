@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { View as ViewIcon } from './View'
+import { View as ViewIcon } from './view'
 import { IconWrapper } from './arrowBack'
 
 const ViewMeta = {

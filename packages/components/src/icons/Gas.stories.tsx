@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Gas as GasIcon } from './Gas'
+import { Gas as GasIcon } from './gas'
 import { IconWrapper } from './arrowBack'
 
 const GasMeta = {

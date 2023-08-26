@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { ChevronUp as ChevronUpIcon } from './ChevronUp'
+import { ChevronUp as ChevronUpIcon } from './chevronUp'
 import { IconWrapper } from './arrowBack'
 
 const ChevronUpMeta = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Dollar as DollarIcon } from './Dollar'
+import { Dollar as DollarIcon } from './dollar'
 import { IconWrapper } from './arrowBack'
 
 const DollarMeta = {

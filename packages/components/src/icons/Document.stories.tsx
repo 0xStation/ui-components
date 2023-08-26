@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Document as DocumentIcon } from './Document'
+import { Document as DocumentIcon } from './document'
 import { IconWrapper } from './arrowBack'
 
 const DocumentMeta = {

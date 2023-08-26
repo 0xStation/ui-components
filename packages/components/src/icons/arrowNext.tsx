@@ -18,4 +18,3 @@ export const ArrowNext = ({ className, fill, ...props }: Omit<React.SVGProps<SVG
     </svg>
   )
 }
- 
