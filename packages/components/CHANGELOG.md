@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.0.19
+
+### Patch Changes
+
+- 5facb03: add new icons
+- 5facb03: make button whitespace no wrap
+
 ## 0.0.18
 
 ### Patch Changes
