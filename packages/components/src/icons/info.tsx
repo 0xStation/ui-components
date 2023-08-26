@@ -6,7 +6,7 @@ export const Info = ({ className, fill, ...props }: Omit<React.SVGProps<SVGSVGEl
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill={fill || '#ffffff'}
+      fill={fill || 'currentColor'}
       className={clsx(className || 'ui-w-6 ui-h-6 ui-aspect-square')}
       {...props}
     >

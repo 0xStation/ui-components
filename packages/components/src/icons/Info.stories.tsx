@@ -15,7 +15,7 @@ type Story = StoryObj<typeof InfoIcon>
 export const Info: Story = {
   render: () => (
     <IconWrapper>
-      <InfoIcon />
+      <InfoIcon fill='#fff' />
     </IconWrapper>
   ),
 }
