@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Cross as CrossIcon } from './cross'
+import { Cross as CrossIcon } from './Cross'
 import { IconWrapper } from './ArrowBack'
 const CrossMeta = {
   title: 'Icons/Cross',
