@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.20
+
+### Patch Changes
+
+- 61df903: tooltip component
+
 ## 0.0.19
 
 ### Patch Changes
