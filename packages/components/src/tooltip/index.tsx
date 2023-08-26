@@ -7,7 +7,7 @@ export const Tooltip = ({
   ...props
 }: {
   children: React.ReactNode
-} & Omit<React.ComponentProps<typeof Root>, 'open'>) => {
+} & React.ComponentProps<typeof Root>) => {
   return <Root {...props}>{children}</Root>
 }
 
