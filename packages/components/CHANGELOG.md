@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.0.21
+
+### Patch Changes
+
+- 3773dd7: update tooltip props
+
 ## 0.0.20
 
 ### Patch Changes
