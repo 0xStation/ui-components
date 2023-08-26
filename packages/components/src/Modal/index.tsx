@@ -1,6 +1,6 @@
 import React from 'react'
 import { Root, Portal, Overlay, Content, Close } from '@radix-ui/react-dialog'
-import { Close as CloseIcon } from '../icons/close'
+import { Close as CloseIcon } from '../icons/Close'
 import { cn } from '../lib/utils'
 import { cva } from 'class-variance-authority'
 import { ModalContext, useModalContext } from './ModalContext'

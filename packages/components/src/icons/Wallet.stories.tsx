@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Wallet as WalletIcon } from './wallet'
+import { Wallet as WalletIcon } from './Wallet'
 import { IconWrapper } from './ArrowBack'
 
 const WalletMeta = {

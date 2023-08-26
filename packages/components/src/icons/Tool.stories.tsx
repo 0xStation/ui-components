@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Tool as ToolIcon } from './tool'
+import { Tool as ToolIcon } from './Tool'
 import { IconWrapper } from './ArrowBack'
 
 const ToolMeta = {
