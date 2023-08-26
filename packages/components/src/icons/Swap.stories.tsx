@@ -15,7 +15,7 @@ type Story = StoryObj<typeof SwapIcon>
 export const Swap: Story = {
   render: () => (
     <IconWrapper>
-      <SwapIcon fill='#ffffff'/>
+      <SwapIcon fill="#ffffff" />
     </IconWrapper>
   ),
 }

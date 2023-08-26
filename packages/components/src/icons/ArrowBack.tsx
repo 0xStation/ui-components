@@ -19,8 +19,6 @@ export const ArrowBack = ({ className, fill, ...props }: Omit<React.SVGProps<SVG
   )
 }
 
-
-
 export const IconWrapper = ({ children }: { children: React.ReactNode }) => (
   <div className="ui-bg-gray-90 ui-w-20 ui-h-20 ui-border ui-border-slate-400 ui-border-dashed ui-flex ui-items-center ui-justify-center ui-rounded-md">
     {children}

@@ -15,8 +15,7 @@ type Story = StoryObj<typeof SendIcon>
 export const Send: Story = {
   render: () => (
     <IconWrapper>
-      <SendIcon fill='#ffffff'/>
+      <SendIcon fill="#ffffff" />
     </IconWrapper>
   ),
 }
-
