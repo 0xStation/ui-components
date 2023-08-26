@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Clipboard as ClipboardIcon } from './clipboard'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './ArrowBack'
 
 const ClipboardMeta = {
   title: 'Icons/Clipboard',

@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { ChevronDown as ChevronDownIcon } from './chevronDown'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './ArrowBack'
 
 const ChevronDownMeta = {
   title: 'Icons/ChevronDown',

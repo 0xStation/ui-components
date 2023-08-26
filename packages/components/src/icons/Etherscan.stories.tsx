@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Etherscan as EtherscanIcon } from './etherscan'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './ArrowBack'
 
 const EtherscanMeta = {
   title: 'Icons/Etherscan',

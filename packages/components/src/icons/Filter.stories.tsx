@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Filter as FilterIcon } from './filter'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './ArrowBack'
 
 const FilterMeta = {
   title: 'Icons/Filter',

@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Discord as DiscordIcon } from './discord'
-import { IconWrapper } from './ArrowBack.stories'
+import { IconWrapper } from './ArrowBack'
 
 const DiscordMeta = {
   title: 'Icons/Discord',

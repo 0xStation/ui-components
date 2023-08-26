@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { ArrowBack as ArrowBackIcon } from './ArrowBack'
+import { ArrowBack as ArrowBackIcon, IconWrapper } from './ArrowBack'
 
 const ArrowBackMeta = {
   title: 'Icons/ArrowBack',
@@ -19,8 +19,3 @@ export const ArrowBack: Story = {
   ),
 }
 
-export const IconWrapper = ({ children }: { children: React.ReactNode }) => (
-  <div className="ui-bg-gray-90 ui-w-20 ui-h-20 ui-border ui-border-slate-400 ui-border-dashed ui-flex ui-items-center ui-justify-center ui-rounded-md">
-    {children}
-  </div>
-)
