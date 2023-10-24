@@ -13,6 +13,7 @@ const buttonVariants = cva(
         input: '!ui-bg-gray-100 ui-border-gray-100 !ui-text-marbleWhite hover:ui-bg-gray-80',
         unemphasized: '!ui-bg-transparent ui-border-white hover:ui-bg-gray-90 !ui-text-white',
         error: '!ui-bg-transparent ui-border-red-100 hover:ui-bg-gray-90 !ui-text-red-100',
+        danger: '!ui-bg-red-100 !ui-text-white ui-border-red-100',
       },
       size: {
         sm: 'ui-px-4 ui-text-base-xxs ui-max-h-7 ui-h-7',
@@ -33,17 +34,37 @@ export const Button = React.forwardRef<
       children: React.ReactNode
       loading?: boolean
     }
->(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, ...props }, ref) => (
-  <button ref={ref} className={cn(buttonVariants({ variant, size, fullWidth }), className)} {...props}>
-    {loading ? (
-      <Spinner variant={variant} size={size} />
-    ) : typeof children === 'string' ? (
-      <div className="ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">{children}</div>
-    ) : (
-      children
-    )}
-  </button>
-))
+>(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, style, ...props }, ref) => {
+  const buttonRef = React.useRef<HTMLButtonElement>(null)
+
+  React.useImperativeHandle(ref, () => buttonRef.current as HTMLButtonElement)
+
+  // prevent button from shrinking when loading
+  const [width, setWidth] = React.useState<number | undefined>()
+  React.useLayoutEffect(() => {
+    if (loading) return
+    if (buttonRef.current) {
+      setWidth(buttonRef.current.offsetWidth)
+    }
+  }, [variant, size, fullWidth, loading])
+
+  return (
+    <button
+      ref={buttonRef}
+      className={cn(buttonVariants({ variant, size, fullWidth }), loading && 'ui-cursor-wait', className)}
+      style={{ ...style, width: loading ? width : undefined }}
+      {...props}
+    >
+      {loading ? (
+        <Spinner variant={variant} size={size} />
+      ) : typeof children === 'string' ? (
+        <div className="ui-whitespace-nowrap ui-text-ellipsis ui-overflow-hidden">{children}</div>
+      ) : (
+        children
+      )}
+    </button>
+  )
+})
 
 const spinnerVariants = cva('animate-spin', {
   variants: {
@@ -53,6 +74,7 @@ const spinnerVariants = cva('animate-spin', {
       input: 'ui-text-marbleWhite',
       unemphasized: 'ui-text-white',
       error: 'ui-text-red100',
+      danger: 'ui-text-white',
     },
     size: {
       sm: 'ui-w-5 ui-h-5',

@@ -55,6 +55,10 @@ export const Error: Story = {
   render: (args) => <TemplateButton variant="error" {...args} />,
 }
 
+export const Danger: Story = {
+  render: (args) => <TemplateButton variant="danger" {...args} />,
+}
+
 export const Input: Story = {
   render: (args) => <TemplateButton variant="input" {...args} />,
 }
