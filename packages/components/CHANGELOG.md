@@ -1,5 +1,12 @@
 # @groupos/ui-components
 
+## 0.1.0
+
+### Minor Changes
+
+- cba73b0: - add 'danger' variant to Button
+  - maintain the width of the button while loading
+
 ## 0.0.21
 
 ### Patch Changes
