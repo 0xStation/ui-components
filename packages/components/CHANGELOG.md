@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.0
+
+### Minor Changes
+
+- c25efe6: Plus Icon
+
 ## 0.1.0
 
 ### Minor Changes
