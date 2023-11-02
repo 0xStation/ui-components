@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.1
+
+### Patch Changes
+
+- 4f8831d: Send icon prop name fixes
+
 ## 0.2.0
 
 ### Minor Changes
