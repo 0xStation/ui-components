@@ -14,7 +14,7 @@ export function Modal({
   return (
     <Root open {...props}>
       <Portal>
-        <Overlay className="ui-fixed ui-inset-0 ui-z-40 ui-bg-[rbga(0,0,0,0.5)] ui-backdrop-blur-sm  data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0" />
+        <Overlay className="ui-fixed ui-inset-0 ui-z-40 ui-bg-[rgba(0,0,0,0.8)] data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0" />
         <ModalContext.Provider value={{ size: props.size, closeModal: props.closeModal }}>
           {children}
         </ModalContext.Provider>
@@ -32,7 +32,7 @@ export const ModalContent = React.forwardRef<
     <Content
       ref={ref}
       className={cn(
-        'ui-fixed ui-left-[50%] ui-top-[50%] ui-z-50 ui-grid ui-w-full ui-max-w-xl ui-translate-x-[-50%] ui-translate-y-[-50%] ui-border ui-bg-black ui-pt-10 ui-pb-4 ui-px-5 ui-shadow-lg ui-duration-200 data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0 data-[state=closed]:ui-zoom-out-95 data-[state=open]:ui-zoom-in-95 data-[state=closed]:ui-slide-out-to-left-1/2 data-[state=closed]:ui-slide-out-to-top-[48%] data-[state=open]:ui-slide-in-from-left-1/2 data-[state=open]:ui-slide-in-from-top-[48%] ui-rounded-md md:ui-w-full ui-text-white ui-border-gray-90 ui-gap-4 ',
+        'ui-fixed ui-left-[50%] ui-top-[50%] ui-z-50 ui-grid ui-w-full ui-max-w-xl ui-translate-x-[-50%] ui-translate-y-[-50%] ui-border ui-bg-black ui-pt-10 ui-pb-4 ui-px-5 ui-shadow-lg ui-duration-200 data-[state=open]:ui-animate-in data-[state=closed]:ui-animate-out data-[state=closed]:ui-fade-out-0 data-[state=open]:ui-fade-in-0 data-[state=closed]:ui-zoom-out-95 data-[state=open]:ui-zoom-in-95 data-[state=closed]:ui-slide-out-to-left-1/2 data-[state=closed]:ui-slide-out-to-top-[48%] data-[state=open]:ui-slide-in-from-left-1/2 data-[state=open]:ui-slide-in-from-top-[48%] ui-rounded-3xl md:ui-w-full ui-text-white ui-border-gray-90 ui-gap-4 ',
         className,
       )}
       {...props}
