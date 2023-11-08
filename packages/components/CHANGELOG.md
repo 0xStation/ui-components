@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.2
+
+### Patch Changes
+
+- 7015293: - Modal: change overlay's background color - Button: add hover state to the Danger variant
+
 ## 0.2.1
 
 ### Patch Changes
