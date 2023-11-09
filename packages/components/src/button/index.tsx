@@ -34,25 +34,15 @@ export const Button = React.forwardRef<
       children: React.ReactNode
       loading?: boolean
     }
->(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, style, ...props }, ref) => {
+>(({ children, className, variant = 'primary', size = 'md', fullWidth = false, loading, ...props }, ref) => {
   const buttonRef = React.useRef<HTMLButtonElement>(null)
 
   React.useImperativeHandle(ref, () => buttonRef.current as HTMLButtonElement)
-
-  // prevent button from shrinking when loading
-  const [width, setWidth] = React.useState<number | undefined>()
-  React.useLayoutEffect(() => {
-    if (loading) return
-    if (buttonRef.current) {
-      setWidth(buttonRef.current.offsetWidth)
-    }
-  }, [variant, size, fullWidth, loading])
 
   return (
     <button
       ref={buttonRef}
       className={cn(buttonVariants({ variant, size, fullWidth }), loading && 'ui-cursor-wait', className)}
-      style={{ ...style, width: loading ? width : undefined }}
       {...props}
     >
       {loading ? (
