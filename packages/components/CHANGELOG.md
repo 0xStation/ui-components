@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.3
+
+### Patch Changes
+
+- 69f8b0e: Revert loading layout fix
+
 ## 0.2.2
 
 ### Patch Changes
