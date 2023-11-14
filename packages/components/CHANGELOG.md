@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.5
+
+### Patch Changes
+
+- 7215633: Removes text size from modal header
+
 ## 0.2.4
 
 ### Patch Changes
