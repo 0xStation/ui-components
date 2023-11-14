@@ -55,7 +55,7 @@ const headingVariants = cva('ui-font-favoritpro ui-text-marbleWhite', {
   variants: {
     size: {
       sm: 'ui-text-heading-lg ui-font-bold',
-      lg: 'ui-text-heading-2xl ui-font-bold',
+      lg: 'ui-text-heading-xl ui-font-bold',
     },
   },
 })
