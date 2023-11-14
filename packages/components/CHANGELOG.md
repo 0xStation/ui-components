@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.4
+
+### Patch Changes
+
+- 09f17f8: Adds spacing to modal header
+
 ## 0.2.3
 
 ### Patch Changes
