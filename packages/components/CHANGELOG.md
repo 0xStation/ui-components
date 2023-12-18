@@ -1,5 +1,11 @@
 # @groupos/ui-components
 
+## 0.2.6
+
+### Patch Changes
+
+- 2428c57: Button: use gradient loading spinner for loading state
+
 ## 0.2.5
 
 ### Patch Changes
